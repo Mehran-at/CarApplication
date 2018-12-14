@@ -1,15 +1,11 @@
+//      The AutomaticCar and ManualCar classes extend from Car and add the necessary code.
 public class ManualCar extends Car {
-    @Override
-    protected String getBrand() {
-        return null;
-    }
-
-    @Override
-    protected String drive() {
-        return "Manual";
-    }
-
     public ManualCar(String brand) {
         super(brand);
+    }
+
+    @Override
+    protected String getType() {
+        return "Manual";
     }
 }
